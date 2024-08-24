@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="ui">
+        <div class="dashboard">
+            <header>
+                <h4>Now stopping</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <div class="cd">
+                <div class="cd-music"></div>
+            </div>
+
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-circle-left"></i>
+                </div>
+
+                <div class="btn btn-toggle">
+                    <i class="fa-regular fa-circle-pause icon-pause"></i>
+                    <i class="fa-sharp fa-regular fa-circle-play icon-play"></i>
+                </div>
+
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-circle-right"></i>
+                </div>
+
+                <div class="btn btn-random">
+                    <i class="fa-sharp fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <input id='progress' class='progress' type="range" value="0" min='0' max="100" step="1">
+            <audio id='audio' src=""></audio>
+        </div>
+
+        <div class="playlist">
+            <!-- <div class="song">
+                <div class="img" style="background-image: url(img/default.jpg)"></div>
+                <div class="include">
+                    <div class="author">Singer</div>
+                    <div class="name-music">Music name</div>
+                </div>
+                <div class="options"></div>
+            </div> -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
